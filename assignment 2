@@ -1,0 +1,102 @@
+import java.util.*;
+public class five{
+    static Scanner in = new Scanner (System.in);
+        public static void main (String [] args){
+
+
+            
+
+
+            int sum = add();
+            System.out.println("The sum is: " + sum); 
+            
+            int diff = subtract();
+            System.out.println("Th diff is: " + diff);
+
+            int product = multiply();
+            System.out.println("The product is: " + product);
+
+            double quotient = divide();
+            System.out.println("The qoutient is: " + quotient );
+
+            String crushname = crush();
+            System.out.println(crushname);
+           
+           five obj = new five();
+
+           obj.myorder();
+        }
+
+      
+        static int add () {
+            System.out.println("Enter num 1 here");
+            int x = in.nextInt();
+            System.out.println("Enter num 2 here");
+            int y = in.nextInt();
+            return x + y;
+    }
+        static int subtract(){
+            System.out.println("Enter num 1 here");
+            int x = in.nextInt();
+            System.out.println("Enter num 2 here");
+            int y = in.nextInt();
+            return x - y;
+        }
+        static int multiply(){
+            System.out.println("Enter num 1 here");
+            int x = in.nextInt();
+            System.out.println("Enter num 2 here");
+            int y = in.nextInt();
+            return x * y;
+        }
+        static int divide(){
+            System.out.println("Enter num 1 here");
+            int x = in.nextInt();
+            System.out.println("Enter num 2 here");
+            int y = in.nextInt();
+            return x / y;
+        }
+        static String crush(){
+           
+            System.out.println("Enter your name");
+            String name = in.nextLine();
+
+            System.out.println("Crush 1 : ");
+
+            String crush1 = in.nextLine();
+
+            
+            System.out.println("CRush 2 :" );
+
+            String second = in.nextLine();
+
+            return name + crush1 +" and " + second;
+        }
+        void myorder(){
+           System.out.println("Order 1");
+           System.out.println("Place Order : " );
+           String ordername1 = in.nextLine();
+           System.out.println("Price : " );
+           int price1 = in.nextInt();
+           System.out.println(ordername1 + " = " + price1 + "\n");
+
+           System.out.println("Order 2");
+           System.out.println("Place Order : " );
+           String ordername2 = in.nextLine();
+           System.out.println("Price : " );
+           int price2 = in.nextInt();
+           System.out.println(ordername2+ " = " + price2 + "\n");
+          
+           System.out.println("\nOrder 3");
+           System.out.println("Place Order 3 ");
+           String ordername3= in.nextLine();
+           System.out.println("Price : " );
+           int price3 = in.nextInt();
+           System.out.println(ordername3 + " = " + price3);
+           System.out.println("Total");
+           int total = price1+price2+price3;
+           System.out.println("Total: "  +total);
+
+
+        }
+}
