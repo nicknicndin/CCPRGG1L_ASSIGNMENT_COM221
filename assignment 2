@@ -79,14 +79,14 @@ public class five{
            System.out.println("Price : " );
            int price1 = in.nextInt();
            System.out.println(ordername1 + " = " + price1 + "\n");
-
+            in.nextLine();
            System.out.println("Order 2");
            System.out.println("Place Order : " );
            String ordername2 = in.nextLine();
            System.out.println("Price : " );
            int price2 = in.nextInt();
            System.out.println(ordername2+ " = " + price2 + "\n");
-          
+          in.nextLine();
            System.out.println("\nOrder 3");
            System.out.println("Place Order 3 ");
            String ordername3= in.nextLine();
